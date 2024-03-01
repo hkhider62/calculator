@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>real calc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>the magical calculator</h1>
+    <div class="wrapper">
+        <form name="call">
+            <input type="text" name="display" id="display" placeholder="0" readonly>
+            <br>
+            <div class="botton-box">
+                <input type="button" class="btn" value="7" onclick="call.display.value +='7'">
+                <input type="button" class="btn" value="8" onclick="call.display.value +='8'">
+                <input type="button" class="btn" value="9" onclick="call.display.value +='9'">
+                <input type="button" class="btn mbtn" value="x" onclick="call.display.value +='*'">
+                <br>
+                <input type="button" class="btn" value="4" onclick="call.display.value +='4'">
+                <input type="button" class="btn" value="5" onclick="call.display.value +='5'">
+                <input type="button" class="btn" value="6" onclick="call.display.value +='6'">
+                <input type="button" class="btn mbtn" value="-" onclick="call.display.value +='+'">
+                <br>
+                <input type="button" class="btn" value="1" onclick="call.display.value +='1'">
+                <input type="button" class="btn" value="2" onclick="call.display.value +='2'">
+                <input type="button" class="btn" value="3" onclick="call.display.value +='3'">
+                <input type="button" class="btn mbtn" value="+" onclick="call.display.value +='+'">
+                <br>
+                <input type="button" class="btn" value="c" onclick="call.display.value =''">
+                <input type="button" class="btn" value="0" onclick="call.display.value +='0'">
+                <input type="button" class="btn mbtn" value="/" onclick="call.display.value +='/'">
+                <input type="button" class="btn mbtn" value="=" onclick="call.display.value = eval(call.display.value)">
+                <br>
+
+
+
+
+            </div>
+        </form>
+
+    </div>
+    
+</body>
+</html>
